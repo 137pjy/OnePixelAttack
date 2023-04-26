@@ -15,7 +15,7 @@ import numpy as np
 from scipy.optimize import OptimizeResult, minimize
 from scipy.optimize._differentialevolution import _status_message
 from scipy._lib._util import check_random_state
-from six.moves import range  # xrange 대체
+# from six.moves import range  # xrange 대체
 from six import string_types  # string_types 대체
 import warnings
 
