@@ -128,8 +128,8 @@ class ResNet:
         img_input = Input(shape=(self.img_rows,self.img_cols,self.img_channels))
         output    = self.residual_network(img_input,self.num_classes,self.stack_n)
         resnet    = Model(img_input, output)
-        resnet.layers
-        len(resnet.layers)
+        print(resnet.layers)
+        print(len(resnet.layers))
         resnet.summary()
 
 
