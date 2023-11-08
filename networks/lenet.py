@@ -76,6 +76,8 @@ class LeNet:
 
         # build network
         model = self.build_model()
+        print(model.layers)
+        print(len(model.layers))
         model.summary()
 
         # Save the best model during each training checkpoint
