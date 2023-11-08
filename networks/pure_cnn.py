@@ -82,6 +82,8 @@ class PureCnn:
         x_train, x_test = self.color_preprocessing(x_train, x_test)
 
         model = self.pure_cnn_network(self.input_shape)
+        print(model.layers)
+        print(len(model.layers))
         model.summary()
 
         # Save the best model during each training checkpoint
