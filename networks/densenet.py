@@ -132,6 +132,8 @@ class DenseNet:
         img_input = Input(shape=(self.img_rows,self.img_cols,self.img_channels))
         output    = self.densenet(img_input,self.num_classes)
         model     = Model(img_input, output)
+        print(model.layers)
+        print(len(model.layers))
         model.summary()
         
         # plot_model(model, show_shapes=True, to_file='model.png')
