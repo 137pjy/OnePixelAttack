@@ -129,6 +129,8 @@ class ResNet:
         output    = self.residual_network(img_input,self.num_classes,self.stack_n)
         resnet    = Model(img_input, output)
         resnet.summary()
+        resnet.layers
+        len(resnet.layers)
 
         # set optimizer
         sgd = optimizers.SGD(lr=.1, momentum=0.9, nesterov=True)
