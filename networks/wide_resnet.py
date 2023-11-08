@@ -118,6 +118,8 @@ class WideResNet:
         img_input = Input(shape=(self.img_rows,self.img_cols,self.img_channels))
         output = self.wide_residual_network(img_input,self.num_classes,self.depth,self.wide)
         resnet = Model(img_input, output)
+        print(resnet.layers)
+        print(len(resnet.layers))
         resnet.summary()
         
         # set optimizer
